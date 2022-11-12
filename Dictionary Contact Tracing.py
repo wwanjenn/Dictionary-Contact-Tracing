@@ -38,3 +38,11 @@
 # Address: Eastwood
 # Phone number: 1234567890What do you want to do? (1-3): 3
 # Exit? n
+
+# Print Menu
+
+# Input Function
+
+# Ask if exit
+
+# Loop from Print Menu
