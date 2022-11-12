@@ -40,9 +40,14 @@
 # Exit? n
 
 # Print Menu
-
+print()
+print("= = = = = M E N U = = = = =")
+print("   1 -> Add New Profile ")
+print("   2 -> Search Database")
+print("   3 -> Exit Program")
+print("= = = = = = = = = = = = = =")
+print()
 # Input Function
 
-# Ask if exit
 
 # Loop from Print Menu
