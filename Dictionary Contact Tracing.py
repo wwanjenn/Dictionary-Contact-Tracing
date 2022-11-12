@@ -54,7 +54,7 @@ while True:
 
 	if whatDo == 1:
 		# Values to insert in database 
-		name = input("Full Name:     ")
+		name = input("Full Name:    ")
 		age  = input("Age:          ")
 		civStat = input("Civil Status: ")
 		occup = input("Occupation:   ")
@@ -73,8 +73,8 @@ while True:
 	if whatDo == 2:
 		name = input("Full Name: ")
 		if name in database:
-			for key in name:
-				print(key, ":", name[key])
+			for key in database[name]:
+				print(key, ":", database[name][key])
 		else:
 			print("Profile does not exist")
 
