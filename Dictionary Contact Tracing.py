@@ -51,11 +51,20 @@ print()
 whatDo = int(input("What do you want to do? (1-3): "))
 
 if whatDo == 1:
+	# Values to insert in database 
 	name = input("FullName:     ")
 	age  = input("Age:          ")
 	civStat = input("Civil Status: ")
 	occup = input("Occupation:   ")
 	addre = input("Address:      ")
-	contact = input("Contact #:    ")
+	contact = input("Contact No.:  ")
 
+	# Insert values into database
+	database[name] = { 
+	"Full name" : name,
+	"Age" : age,
+	"Civil status" : civStat,
+	"Occupation" : addre,
+	"Contact No." : contact
+	}
 # Loop from Print Menu
