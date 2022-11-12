@@ -40,45 +40,46 @@
 # Exit? n
 
 database = {}
-# Print Menu
-print()
-print("= = = = = M E N U = = = = =")
-print("   1 -> Add New Profile ")
-print("   2 -> Search Database")
-print("   3 -> Exit Program")
-print("= = = = = = = = = = = = = =")
-print()
-# Input Function
-whatDo = int(input("What do you want to do? (1-3): "))
+while True:
+	# Print Menu
+	print()
+	print("= = = = = M E N U = = = = =")
+	print("   1 -> Add New Profile ")
+	print("   2 -> Search Database")
+	print("   3 -> Exit Program")
+	print("= = = = = = = = = = = = = =")
+	print()
+	# Input Function
+	whatDo = int(input("What do you want to do? (1-3): "))
 
-if whatDo == 1:
-	# Values to insert in database 
-	name = input("Full Name:     ")
-	age  = input("Age:          ")
-	civStat = input("Civil Status: ")
-	occup = input("Occupation:   ")
-	addre = input("Address:      ")
-	contact = input("Contact No.:  ")
+	if whatDo == 1:
+		# Values to insert in database 
+		name = input("Full Name:     ")
+		age  = input("Age:          ")
+		civStat = input("Civil Status: ")
+		occup = input("Occupation:   ")
+		addre = input("Address:      ")
+		contact = input("Contact No.:  ")
 
-	# Insert values into database
-	database[name] = { 
-	"Full Name   " : name,
-	"Age         " : age,
-	"Civil Status" : civStat,
-	"Occupation  " : addre,
-	"Contact No. " : contact
-	}
+		# Insert values into database
+		database[name] = { 
+		"Full Name   " : name,
+		"Age         " : age,
+		"Civil Status" : civStat,
+		"Occupation  " : addre,
+		"Contact No. " : contact
+		}
 
-if whatDo == 2:
-	name = input("Full Name: ")
-	if name in database:
-		for key in name:
-			print(key, ":", name[key])
-	else:
-		print("Profile does not exist")
+	if whatDo == 2:
+		name = input("Full Name: ")
+		if name in database:
+			for key in name:
+				print(key, ":", name[key])
+		else:
+			print("Profile does not exist")
 
-if whatDo == 3:
-	confirm = input("Exit? (y/n)")
-	if confirm == "y":
-		exit()
-# Loop from Print Menu
+	if whatDo == 3:
+		confirm = input("Exit? (y/n)")
+		if confirm == "y":
+			exit()
+	# Loop from Print Menu
