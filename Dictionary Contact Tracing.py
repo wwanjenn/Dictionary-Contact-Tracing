@@ -51,7 +51,7 @@ while True:
 	# Input Function
 	whatDo = input("What do you want to do? (1-3): ")
 
-	if whatDo == "1":
+	if int(whatDo) == 1:
 		# Values to insert in database 
 		name = input("Full Name:    ")
 		age  = input("Age:          ")
@@ -70,7 +70,7 @@ while True:
 		"Contact No. " : contact
 		}
 
-	elif whatDo == "2":
+	elif int(whatDo) == 2:
 		name = input("Full Name: ")
 		print("= = = = = = = = = = = = = =")
 		print()
@@ -81,7 +81,7 @@ while True:
 			print("Profile does not exist")
 		print()
 
-	elif whatDo == "3":
+	elif int(whatDo) == 3:
 		confirm = input("Exit? (y/n): ")
 		if confirm == "y":
 			print()
