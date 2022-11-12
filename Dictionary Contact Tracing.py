@@ -48,6 +48,14 @@ print("   3 -> Exit Program")
 print("= = = = = = = = = = = = = =")
 print()
 # Input Function
-input = int(input("What do you want to do? (1-3): "))
+whatDo = int(input("What do you want to do? (1-3): "))
 
+if whatDo == 1:
+	name = input("FullName:     ")
+	age  = input("Age:          ")
+	civStat = input("Civil Status: ")
+	occup = input("Occupation:   ")
+	addre = input("Address:      ")
+	contact = input("Contact #:    ")
+	
 # Loop from Print Menu
