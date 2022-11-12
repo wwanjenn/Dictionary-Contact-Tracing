@@ -76,4 +76,9 @@ if whatDo == 2:
 			print(key, ":", name[key])
 	else:
 		print("Profile does not exist")
+
+if whatDo == 3:
+	confirm = input("Exit? (y/n)")
+	if confirm == "y":
+		exit()
 # Loop from Print Menu
