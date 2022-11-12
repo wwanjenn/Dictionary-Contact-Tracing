@@ -48,6 +48,6 @@ print("   3 -> Exit Program")
 print("= = = = = = = = = = = = = =")
 print()
 # Input Function
-
+input = int(input("What do you want to do? (1-3): "))
 
 # Loop from Print Menu
