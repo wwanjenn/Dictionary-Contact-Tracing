@@ -74,5 +74,6 @@ if whatDo == 2:
 	if name in database:
 		for key in name:
 			print(key, ":", name[key])
-	
+	else:
+		print("Profile does not exist")
 # Loop from Print Menu
