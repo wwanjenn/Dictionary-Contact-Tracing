@@ -86,4 +86,10 @@ while True:
 			print()
 			print("= = = E X I T I N G = = =")
 			exit()
+	
+	else:
+		print()
+		print("Please Enter a valid number")
+		print()
+
 	# Loop from Print Menu
