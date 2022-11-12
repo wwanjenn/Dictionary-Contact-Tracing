@@ -51,45 +51,46 @@ while True:
 	# Input Function
 	whatDo = input("What do you want to do? (1-3): ")
 
-	if int(whatDo) == 1:
-		# Values to insert in database 
-		name = input("Full Name:    ")
-		age  = input("Age:          ")
-		civStat = input("Civil Status: ")
-		occup = input("Occupation:   ")
-		addre = input("Address:      ")
-		contact = input("Contact No.:  ")
-		print("= = = = = S A V E D = = = = =")
-		print()
-		# Insert values into database
-		database[name] = { 
-		"Full Name   " : name,
-		"Age         " : age,
-		"Civil Status" : civStat,
-		"Occupation  " : addre,
-		"Contact No. " : contact
-		}
-
-	elif int(whatDo) == 2:
-		name = input("Full Name: ")
-		print("= = = = = = = = = = = = = =")
-		print()
-		if name in database:
-			for key in database[name]:
-				print("  ", key, ":", database[name][key])
-		else:
-			print("Profile does not exist")
-		print()
-
-	elif int(whatDo) == 3:
-		confirm = input("Exit? (y/n): ")
-		if confirm == "y":
+	try:
+		if int(whatDo) == 1:
+			# Values to insert in database 
+			name = input("Full Name:    ")
+			age  = input("Age:          ")
+			civStat = input("Civil Status: ")
+			occup = input("Occupation:   ")
+			addre = input("Address:      ")
+			contact = input("Contact No.:  ")
+			print("= = = = = S A V E D = = = = =")
 			print()
-			print("= = = E X I T I N G = = =")
-			exit()
-		else:
+			# Insert values into database
+			database[name] = { 
+			"Full Name   " : name,
+			"Age         " : age,
+			"Civil Status" : civStat,
+			"Occupation  " : addre,
+			"Contact No. " : contact
+			}
+
+		elif int(whatDo) == 2:
+			name = input("Full Name: ")
+			print("= = = = = = = = = = = = = =")
 			print()
-	else:
+			if name in database:
+				for key in database[name]:
+					print("  ", key, ":", database[name][key])
+			else:
+				print("Profile does not exist")
+			print()
+
+		elif int(whatDo) == 3:
+			confirm = input("Exit? (y/n): ")
+			if confirm == "y":
+				print()
+				print("= = = E X I T I N G = = =")
+				exit()
+			else:
+				print()
+	except ValueError:
+		print("Please enter a Valid Number.")
 		print()
-		print("Please enter a valid number.")
 		# Loop from Print Menu
