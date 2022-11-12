@@ -49,9 +49,8 @@ while True:
 	print("= = = = = = = = = = = = = =")
 	print()
 	# Input Function
-	whatDo = int(input("What do you want to do? (1-3): "))
-
 	try:
+		whatDo = int(input("What do you want to do? (1-3): "))
 		if whatDo == 1:
 			# Values to insert in database 
 			name = input("Full Name:    ")
