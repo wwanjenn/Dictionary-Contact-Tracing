@@ -38,6 +38,7 @@
 # Address: Eastwood
 # Phone number: 1234567890What do you want to do? (1-3): 3
 # Exit? n
+
 database = {}
 # Print Menu
 print()
@@ -52,7 +53,7 @@ whatDo = int(input("What do you want to do? (1-3): "))
 
 if whatDo == 1:
 	# Values to insert in database 
-	name = input("FullName:     ")
+	name = input("Full Name:     ")
 	age  = input("Age:          ")
 	civStat = input("Civil Status: ")
 	occup = input("Occupation:   ")
@@ -61,10 +62,17 @@ if whatDo == 1:
 
 	# Insert values into database
 	database[name] = { 
-	"Full name" : name,
-	"Age" : age,
-	"Civil status" : civStat,
-	"Occupation" : addre,
-	"Contact No." : contact
+	"Full Name   " : name,
+	"Age         " : age,
+	"Civil Status" : civStat,
+	"Occupation  " : addre,
+	"Contact No. " : contact
 	}
+
+if whatDo == 2:
+	name = input("Full Name: ")
+	if name in database:
+		for key in name:
+			print(key, ":", name[key])
+	
 # Loop from Print Menu
