@@ -42,7 +42,6 @@
 database = {}
 while True:
 	# Print Menu
-	print()
 	print("= = = = = M E N U = = = = =")
 	print("   1 -> Add New Profile ")
 	print("   2 -> Search Database")
@@ -79,9 +78,12 @@ while True:
 				print("  ", key, ":", database[name][key])
 		else:
 			print("Profile does not exist")
+		print()
 
 	if whatDo == 3:
-		confirm = input("Exit? (y/n)")
+		confirm = input("Exit? (y/n): ")
 		if confirm == "y":
+			print()
+			print("= = = E X I T I N G = = =")
 			exit()
 	# Loop from Print Menu
