@@ -60,6 +60,7 @@ while True:
 		addre = input("Address:      ")
 		contact = input("Contact No.:  ")
 		print("= = = = = S A V E D = = = = =")
+		print()
 		# Insert values into database
 		database[name] = { 
 		"Full Name   " : name,
@@ -69,7 +70,7 @@ while True:
 		"Contact No. " : contact
 		}
 
-	if whatDo == 2:
+	elif whatDo == 2:
 		name = input("Full Name: ")
 		print("= = = = = = = = = = = = = =")
 		print()
@@ -80,16 +81,15 @@ while True:
 			print("Profile does not exist")
 		print()
 
-	if whatDo == 3:
+	elif whatDo == 3:
 		confirm = input("Exit? (y/n): ")
 		if confirm == "y":
 			print()
 			print("= = = E X I T I N G = = =")
 			exit()
-	
+		else:
+			print()
 	else:
 		print()
-		print("Please Enter a valid number")
-		print()
-
-	# Loop from Print Menu
+		print("Please enter a valid number.")
+		# Loop from Print Menu
