@@ -60,7 +60,7 @@ while True:
 		occup = input("Occupation:   ")
 		addre = input("Address:      ")
 		contact = input("Contact No.:  ")
-
+		print("= = = = = S A V E D = = = = =")
 		# Insert values into database
 		database[name] = { 
 		"Full Name   " : name,
@@ -72,9 +72,11 @@ while True:
 
 	if whatDo == 2:
 		name = input("Full Name: ")
+		print("= = = = = = = = = = = = = =")
+		print()
 		if name in database:
 			for key in database[name]:
-				print(key, ":", database[name][key])
+				print("  ", key, ":", database[name][key])
 		else:
 			print("Profile does not exist")
 
