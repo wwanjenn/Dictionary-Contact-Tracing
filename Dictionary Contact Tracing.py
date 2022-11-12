@@ -38,7 +38,7 @@
 # Address: Eastwood
 # Phone number: 1234567890What do you want to do? (1-3): 3
 # Exit? n
-
+database = {}
 # Print Menu
 print()
 print("= = = = = M E N U = = = = =")
@@ -57,5 +57,5 @@ if whatDo == 1:
 	occup = input("Occupation:   ")
 	addre = input("Address:      ")
 	contact = input("Contact #:    ")
-	
+
 # Loop from Print Menu
